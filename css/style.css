@@ -1,3 +1,8 @@
+main {
+    width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -25,7 +30,7 @@ a {
 
 .header-nav-list {
     display: flex;
-    font-size: 24px;
+    font-size: 20px;
     padding: 0 40px;
 }
 
@@ -50,10 +55,11 @@ a {
     position: absolute;
     top: 15%;
     left: 25%;
-    font-size: 150px;
+    font-size: 50px;
     font-family: "Indie Flower", cursive;
     font-weight: 400;
     font-style: bold;
+    line-height: 80px;
     color: rgb(201, 9, 111);
     z-index: 10;
 }
@@ -64,9 +70,9 @@ h1 span {
 
 .image__sub-ttl {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 25%;
-    font-size: 60px;
+    font-size: 20px;
     color: rgb(201, 9, 111);
     z-index: 10;
 }
@@ -77,10 +83,9 @@ h2 span {
 
 .image__text {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 25%;
-
-    font-size: 32px;
+    font-size: 18px;
     line-height: normal;
     color: gray;
 }
@@ -88,34 +93,34 @@ h2 span {
 .news__section {
     position: relative;
     width: 100%;
-    height: 800px;
-    padding: 100px 0;
+    height: 700px;
+    padding: 100px 0 0 0;
 }
 
 .news__sub-ttl {
     position: absolute;
     top: 5%;
     left: 30%;
-    font-size: 28px;
+    font-size: 20px;
     font-family: "Indie Flower", cursive;
     color:  rgb(201, 9, 111);
 }
 
 .news__main-ttl {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 30%;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bold;
     color: gray;
 }
 
 .news__content {
     position: absolute;
-    top: 20%;
+    top: 13%;
     left: 30%;
     color: gray;
-    font-size: 36px;
+    font-size: 18px;
     line-height: 100px;
     list-style: none;
     border-top: 3px solid lightgray;
@@ -130,7 +135,7 @@ h2 span {
 .news-item span {
     background:rgb(201, 9, 111);
     color: white;
-    font-size: 28px;
+    font-size: 20px;
     border-radius: 20px;
     padding: 10px 15px;
     margin: 0 30px;
@@ -139,53 +144,53 @@ h2 span {
 .about__section {
     position: relative;
     width: 100%;
-    height: 1000px;
+    height: 500px;
     background: rgb(241, 238, 238);
-    padding: 100px 0;
     box-sizing: border-box;
+    padding: 100px 0;
 }
 
 .about__sub-ttl {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
-    font-size: 28px;
+    font-size: 20px;
     font-family: "Indie Flower", cursive;
     color:  rgb(201, 9, 111);
 }
 
 .about__main-ttl {
     position: absolute;
-    top: 18%;
-    left: 40%;
-    font-size: 55px;
+    top: 10%;
+    left: 35%;
+    font-size: 25px;
     font-weight: bold;
     color: gray;
 }
 
 .about__text1 {
     position: absolute;
-    top: 35%;
-    left: 20%;
-    font-size: 36px;
-    line-height: 50px;
-    color: rgb(180, 180, 180);
+    top: 30%;
+    left: 10%;
+    font-size: 20px;
+    line-height: 30px;
+    color: gray;
 }
 
 .about__text2 {
     position: absolute;
-    top: 60%;
-    left: 20%;
-    font-size: 36px;
-    line-height: 50px;
-    color: rgb(180, 180, 180);
+    top: 55%;
+    left: 10%;
+    font-size: 20px;
+    line-height: 30px;
+    color: gray;
 }
 
 .about__image {
     position: absolute;
-    top: 5%;
-    left: 45%;
-    transform: scale(0.4);
+    top: 20%;
+    left: 55%;
+    transform: scale(0.7);
 }
 
 .about__image img {
@@ -195,51 +200,53 @@ h2 span {
 .service__section {
     position: relative;
     width: 100%;
-    height: 1000px;
+    height: 900px;
     padding: 100px 0;
+    box-sizing: border-box;
 }
 
 .service__sub-ttl {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 10%;
-    font-size: 28px;
+    font-size: 20px;
     font-family: "Indie Flower", cursive;
     color:  rgb(201, 9, 111);
 }
 
 .service__main-ttl {
     position: absolute;
-    top: 15%;
+    top: 8%;
     left: 10%;
-    font-size: 55px;
+    font-size: 25px;
     font-weight: bold;
     color: gray;
 }
 
 .service__card {
     display: grid;
-    grid-template-rows: 380px 380px;
-    grid-template-columns: 1fr 1fr; 
-    padding: 250px 200px; 
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 150px; 
 }
 
 .service__card_vol1 {
     grid-column: 1/2;
-    grid-row: 1/4;
+    grid-row: 1/3;
     background-color: rgb(176, 6, 97);
 }
 
 .service__card__img1 img {
     display: block;
-    margin: 40px auto;
-    width: 30%;
+    margin: 30px auto;
+    width: 25%;
 }
 
 .service__content_vol1 {
-    margin: 40px auto;
+    margin: 50px auto;
     text-align: center;
-    font-size: 36px;
+    font-size: 25px;
+    font-weight: bold;
     color: white;
 }
 
@@ -247,7 +254,7 @@ h2 span {
     margin: 50px auto;
     text-align: center;
     line-height: 50px;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 100;
     color: white;
 }
@@ -260,30 +267,31 @@ h2 span {
 
 .service__card__img2 img {
     display: block;
-    margin: 40px 25px;
-    width: 25%;
+    margin: 15% 2%;
+    width: 28%;
 }
 
 .service__content_vol2 {
     margin: 20px auto;
     text-align: center;
-    font-size: 36px;
+    font-size: 25px;
     color: white;
+    font-weight: bold;
     position: absolute;
-    top: 35%;
-    right: 30%;
+    top: 25%;
+    right: 25%;
 }
 
 .service__content__text_vol2 {
-    margin: 20px auto;
+    margin: 20px 30px;
     text-align: left;
-    line-height: 50px;
-    font-size: 32px;
+    line-height: 35px;
+    font-size: 12px;
     font-weight: 100;
     color: white;
     position: absolute;
-    top: 40%;
-    right: 15%;
+    top: 30%;
+    right: 13%;
 }
 
 .service__card_vol3 {
@@ -294,37 +302,39 @@ h2 span {
 
 .service__card__img3 img {
     display: block;
-    margin: 40px 25px;
-    width: 25%;
+    margin: 65px 10px;
+    width: 28%;
 }
 
 .service__content_vol3 {
     margin: 20px auto;
     text-align: center;
-    font-size: 36px;
+    font-size: 25px;
     color: white;
+    font-weight: bold;
     position: absolute;
-    top: 65%;
-    right: 30%;
+    top: 55%;
+    right: 25%;
 }
 
 .service__content__text_vol3 {
-    margin: 20px auto;
+    margin: 20px 30px;
     text-align: left;
-    line-height: 50px;
-    font-size: 32px;
+    line-height: 35px;
+    font-size: 12px;
     font-weight: 100;
     color: white;
     position: absolute;
-    top: 70%;
-    right: 15%;
+    top: 60%;
+    right: 13%;
 }
 
 .blog__section {
     position: relative;
     width: 100%;
-    height: 1200px;
+    height: 800px;
     padding: 100px 0;
+    box-sizing: border-box;
     background: rgb(241, 238, 238);
 }
 
@@ -332,16 +342,16 @@ h2 span {
     position: absolute;
     top: 5%;
     left: 10%;
-    font-size: 28px;
+    font-size: 20px;
     font-family: "Indie Flower", cursive;
     color:  rgb(201, 9, 111);
 }
 
 .blog__main-ttl {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 10%;
-    font-size: 55px;
+    font-size: 25px;
     font-weight: bold;
     color: gray;
 }
@@ -350,10 +360,10 @@ h2 span {
     display: flex;
     justify-content: flex-start;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left:10%;
     width: 100%;
-    gap: 100px;
+    gap: 30px;
 }
 
 .blog__card {
@@ -372,7 +382,7 @@ h2 span {
 }
 
 .card__item {
-    padding: 150px;
+    padding: 50px;
 }
 
 .card__cat {
@@ -383,7 +393,7 @@ h2 span {
     padding: 20px;
     display: inline-block;
     color: white;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .card__ttl {
@@ -391,40 +401,41 @@ h2 span {
     top: 65%;
     left: 10%;
     color: gray;
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 70px;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 .tag {
     margin-top: 40px;
-    font-size: 30px;
+    font-size: 20px;
     color: gray;
 }
 
 .card__date {
     position: absolute;
-    bottom: 7%;
+    font-size: 10px;
+    bottom: 10%;
     left: 10%;
 }
 
 .card__logo {
     position: absolute;
-    bottom: 7%;
+    font-size: 10px;
+    bottom: 10%;
     right: 10%;
 }
 
 .blog__btn {
     position: absolute;
-    bottom: 8%;
+    bottom: 25%;
     left: 42%;
     display: inline-block;
     text-align: center;
-    line-height: 2.5em;
+    line-height: 2em;
     vertical-align: middle;
-    font-size: 40px;
-    width: 500px;
-    height: 100px;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
     padding: 10px 0;
     background: white;
     color: rgb(167, 4, 124);
@@ -435,7 +446,7 @@ h2 span {
 .company__section {
     position: relative;
     width: 100%;
-    height: 1000px;
+    height: 800px;
     padding: 100px 0;
 }
 
@@ -443,23 +454,23 @@ h2 span {
     position: absolute;
     top: 5%;
     left: 10%;
-    font-size: 28px;
+    font-size: 20px;
     font-family: "Indie Flower", cursive;
     color:  rgb(201, 9, 111);
 }
 
 .company__main-ttl {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 10%;
-    font-size: 55px;
+    font-size: 25px;
     font-weight: bold;
     color: gray;
 }
 
 .company__table {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 10%;
     color: gray;
 }
@@ -476,7 +487,7 @@ table th,
 table td {
     padding: 50px;
     text-align: left;
-    font-size: 32px;
+    font-size: 25px;
     border: 1px solid #ddd;
 }
 
@@ -499,12 +510,19 @@ table td {
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    height: 500px;
+    height: 400px;
+    padding:100px 0;
     position: relative;
+    box-sizing: border-box;
+}
+
+.recruit__img img,
+.interview__img img {
+    object-fit: cover;
 }
 
 .recruit__img {
-    height: 100%;
+    height: auto;
     width: 50vw;
     position: relative;
 }
@@ -516,15 +534,15 @@ table td {
 .recruit__content-ttl {
     position: absolute;
     top: 50%;
-    left: 20%;
-    font-size: 65px;
+    left: 25%;
+    font-size: 25px;
     color: white;
 }
 
 .interview__img {
     position: absolute;
     left: 50%;
-    height: 100%;
+    height: auto;
     width: 50vw;
 }
 
@@ -536,22 +554,22 @@ table td {
     position: absolute;
     top: 50%;
     left: 67%;
-    font-size: 65px;
+    font-size: 25px;
     color: white;
 }
 
 .contact {
     width: 100%;
-    height: 500px;
+    height: 200px;
     padding: 100px 0;
     position: relative;
 }
 
 .contact__text {
     position: absolute;
-    top: 30%;
-    left: 40%;
-    font-size: 36px;
+    top: 10%;
+    left: 25%;
+    font-size: 25px;
     font-weight: bold;
     color: gray;
 }
@@ -559,23 +577,23 @@ table td {
 .contact__text::before {
     content: "";
     position: absolute;
-    top: 80px;
-    left: 50%;
-    height: 100px;
-    border-left: 5px solid rgb(201, 9, 111);
+    top: 50px;
+    left: 53%;
+    height: 70px;
+    border-left: 3px solid rgb(201, 9, 111);
 }
 
 .contact__btn {
     position: absolute;
-    bottom: 20%;
-    left: 45%;
+    bottom: 35%;
+    left: 35%;
     display: inline-block;
     text-align: center;
-    line-height: 2.5em;
-    vertical-align: middle;
-    font-size: 36px;
-    width: 500px;
-    height: 100px;
+    line-height: 2em;
+    vertical-align: center;
+    font-size: 20px;
+    width: 350px;
+    height: 50px;
     padding: 10px 0;
     box-shadow: 5px 15px 3px 0 rgb(153, 3, 83);
     background: linear-gradient(90deg, #f449a4,#b0056f);
@@ -586,12 +604,12 @@ table td {
 .contact__btn::before {
     content: "";
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     left: 10%;
     background: url(../img/mail.svg) no-repeat;
     background-size: cover;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 30px;
     transform: translateY(-50%);
 }
 
@@ -609,13 +627,11 @@ footer {
     color: rgb(140, 137, 137);
     text-align: center;
     transform: translate(-50%, -50%);
-    font-size: 24px;
+    font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
-    body {
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+    main {
       display: none;
     }
-
-
 }
