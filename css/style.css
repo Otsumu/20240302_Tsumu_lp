@@ -1,4 +1,4 @@
-main {
+body {
     width: 100%;
     height: auto;
 }
@@ -271,7 +271,7 @@ h2 span {
     grid-row: 1/2;
     background-color: rgb(166, 88, 129);
     display: grid; 
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 50% 50%;
 }
 
 .service__content_vol2 {
@@ -303,7 +303,7 @@ h2 span {
     grid-row: 2/3;
     background-color: rgb(172, 134, 162);
     display: grid; 
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 50% 50%;
 }
 
 .service__content_vol3 {
@@ -509,13 +509,12 @@ table td {
     align-items: flex-start;
     width: 100%;
     height: 400px;
-    padding: 100px;
-    box-sizing: border-box;
+    padding: 150px 0 0 0;
 }
 
 .recruit__img,
 .interview__img {
-    width: 50vw;
+    width: 100vw;
     position: relative;
 }
 
@@ -523,7 +522,7 @@ table td {
 .interview__img img {
     object-fit: cover;
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 .recruit__text,
@@ -541,14 +540,10 @@ table td {
 .contact {
     width: 100%;
     height: 300px;
-    padding: 100px 0;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-
+    align-items: center; /* 垂直方向に中央揃え */
 }
 
 .contact__text {
@@ -557,6 +552,7 @@ table td {
     font-weight: bold;
     color: gray;
     position: relative;
+    margin-bottom: -50px;
 }
 
 .contact__text::after {
@@ -568,26 +564,24 @@ table td {
     border-left: 3px solid rgb(201, 9, 111);
 }
 .contact__btn {
-    position: relative;
-    top: 70%;
-    left: 10px;
-    display: inline-block;
     text-align: center;
     font-size: 20px;
-    width: 280px;
-    height: 20px;
+    width: 250px;
+    height: 30px;
     padding: 10px 0;
+    margin: auto;
     box-shadow: 5px 15px 3px 0 rgb(153, 3, 83);
     background: linear-gradient(90deg, #f449a4, #b0056f);
     color: white;
     border-radius: 60px;
+    position: relative;
 }
 
 .contact__btn::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 10px;
+    top: 30%;
+    left: 10%;
     background: url(../img/mail.svg) no-repeat;
     background-size: cover;
     width: 40px;
@@ -608,4 +602,10 @@ footer {
 .copyright {
     color: rgb(140, 137, 137);
     font-size: 16px;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        max-width: 1000px;
+    }
 }
