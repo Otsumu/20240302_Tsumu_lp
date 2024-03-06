@@ -245,6 +245,8 @@ h2 span {
     grid-template-rows: 300px 300px;
     grid-template-columns: 1fr 1fr;
     padding: 150px 100px;
+    max-width: calc(100% - 10%);
+    white-space: nowrap;
 }
 
 .service__card_img img {
@@ -274,10 +276,10 @@ h2 span {
 }
 
 .service__content__text_vol1 {
-    margin: 30px auto;
+    margin: 0 auto;
     text-align: left;
     line-height: 30px;
-    font-size: 12px;
+    font-size: 14px;
     color: white;
 }
 
@@ -415,12 +417,11 @@ h2 span {
     position: relative;
     margin: 0 auto;
     color: gray;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 30px;
     text-align: left;
-    width: auto;
-    max-width: 100%;
-    padding: 0 30px
+    white-space: nowrap;
+    max-width: calc(100% - 10%);
 }
 
 .tag {
