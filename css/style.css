@@ -1,6 +1,6 @@
 body {
-    width: 100%;
-    height: auto;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 a {
@@ -143,7 +143,7 @@ h2 span {
 .about__section {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 400px;
     background: rgb(241, 238, 238);
     box-sizing: border-box;
     padding: 100px 0 0 200px;
@@ -375,11 +375,9 @@ h2 span {
 .blog__content {
     display: flex;
     justify-content: flex-start;
-    position: absolute;
-    top: 15%;
-    left:10%;
     width: 100%;
     gap: 30px;
+    padding: 0 0 0 100px;
 }
 
 .blog__card {
@@ -399,7 +397,7 @@ h2 span {
 }
 
 .card__item {
-    padding: 50px;
+    padding: 30px;
 }
 
 .card__cat {
@@ -414,37 +412,41 @@ h2 span {
 }
 
 .card__ttl {
-    position: absolute;
-    top: 65%;
-    left: 10%;
+    position: relative;
+    margin: 0 auto;
     color: gray;
     font-size: 14px;
     line-height: 30px;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    padding: 0 30px
 }
 
 .tag {
-    margin-top: 40px;
-    font-size: 20px;
+    margin-top: 30%;
+    text-align: center;
     color: gray;
+    position: relative;
 }
 
 .card__date {
     position: absolute;
     font-size: 10px;
-    bottom: 10%;
-    left: 10%;
+    top: 100%;
+    left: 5%;
 }
 
 .card__logo {
     position: absolute;
     font-size: 10px;
-    bottom: 10%;
-    right: 10%;
+    top: 100%;
+    right: 5%;
 }
 
 .blog__btn {
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     left: 42%;
     display: inline-block;
     text-align: center;
@@ -623,14 +625,8 @@ footer {
     font-size: 16px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1500px) {
     body {
-        max-width: 1000px;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    body {
-        max-width: 1500px;
+        max-width: 1000px; 
     }
 }
